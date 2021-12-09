@@ -1,0 +1,145 @@
+<html>
+<head>
+  <title>Menu Card</title>
+  <style type="text/css">
+  	h3{
+	font-family: Arial black;
+    font-size: 20px;
+    text-align:center;
+    }
+  </style>
+</head>
+<body style="background-color: rgb(233,178,71); text-align:center">
+	<script type="text/javascript">
+		function show()
+		{
+			var x=getSelectedOption();
+			document.getElementById("demo").inneHTML()=x;
+		}
+	</script>
+	<h1><strong>Menu Card</strong></h1>
+	<h5>(Please tick the checkbox to place order)</h5>
+	<form action="menu.html">
+		<center>
+			<h3 id="demo"></h3>
+	 <table style="color:#404040; text-align: center;" border="2px solid black" padding=4px>
+		<tr>
+			<th>Sr. No.</th>
+			<th>Item Name</th>
+			<th>Price</th>
+			<th>Check to order</th>
+		</tr>
+		<tr style="text-align: left">
+			<td colspan=4><b><strong>Soups</strong></b></td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>Tomato Soup</td>
+			<td>110/-</td>
+			<td><input type="checkbox" id="food1" name="food1" value="a"></td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Sweet Corn Soup</td>
+			<td>150/-</td>
+			<td><input type="checkbox" id="food2" name="food2" value="b"></td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>Monchow Soup</td>
+			<td>200/-</td>
+			<td><input type="checkbox" id="food3" name="food3" value="c"></td>
+		</tr>
+		<tr style="text-align: left">
+			<td colspan=4><b><strong>Sandwiches</strong></b></td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>Paneer Cheese Sandwich</td>
+			<td>150/-</td>
+			<td><input type="checkbox" id="food4" name="food4" value="d"></td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Tripple Decker Sandwich</td>
+			<td>160/-</td>
+			<td><input type="checkbox" id="food5" name="food5" value="e"></td>
+		</tr>
+		<tr style="text-align: left">
+			<td colspan=4><b><strong>Pizzas</strong></b></td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>Deluxe Veggie Pizza</td>
+			<td>180/-</td>
+			<td><input type="checkbox" id="food6" name="food6" value="f"></td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Farmhouse Pizza</td>
+			<td>180/-</td>
+			<td><input type="checkbox" id="food7" name="food7" value="g"></td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>BBQ Paneer Pizza</td>
+			<td>180/-</td>
+			<td><input type="checkbox" id="food8" name="food8" value="h"></td>
+		</tr>
+		<tr style="text-align: left">
+			<td colspan=4><b><strong>Appetizers</strong></b></td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>Crispy American Corn Chilly</td>
+			<td>170/-</td>
+			<td><input type="checkbox" id="food9" name="food9" value="o"></td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Veg Spring Roll</td>
+			<td>170/-</td>
+			<td><input type="checkbox" id="food10" name="food10" value="i"></td>
+		</tr>
+		<tr style="text-align: left">
+			<td colspan=4><b><strong>Pasta</strong></b></td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>Pink Pasta</td>
+			<td>170/-</td>
+			<td><input type="checkbox" id="food11" name="food11" value="j"></td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Alfredo Pasta</td>
+			<td>220/-</td>
+			<td><input type="checkbox" id="food12" name="food12" value="k"></td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>Lasgna Veg</td>
+			<td>220/-</td>
+			<td><input type="checkbox" id="food13" name="food13" value="l"></td>
+		</tr>
+		<tr style="text-align: left" >
+			<td colspan=4><b><strong>Combos</strong></b></td>
+			</tr>
+		<tr>
+			<td>1</td>
+			<td>Chinese Platter</td>
+			<td>400/-</td>
+			<td><input type="checkbox" id="food14" name="food14" value="m"></td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>Special Thali</td>
+			<td>360/-</td>
+			<td><input type="checkbox" id="food15" name="food15" value="n"></td>
+		</tr>
+	</table>
+	</center>
+	<br/>
+	<input type="submit" value="Submit" onselect="show()">
+</form>
+</body>

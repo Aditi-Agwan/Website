@@ -1,0 +1,22 @@
+body{
+	background-color: lightgray;
+}
+
+h1{
+ font-family: verdana;
+ font-style: italic;
+ font-size: 22px;
+ color: red;
+ text-align:center;
+}
+
+h3{
+	font-family: Arial black;
+    font-size: 20px;
+    text-align:center;
+}
+.edit{
+     font-family: verdana;
+     font-size: 18px;
+     text-align:center;
+}
